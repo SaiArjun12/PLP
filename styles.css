@@ -1,0 +1,66 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  #search-bar {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  #grid-layout,
+  #list-layout {
+    padding: 8px 12px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  #product-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .product h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .product p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .grid-layout {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center; 
+    align-content: center; 
+}
+
+/* List layout */
+.list-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.highlighted {
+    background-color: yellow; /* Change this to the desired highlight color */
+}
